@@ -1,19 +1,43 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+ASCII	/Users/Ste/.bash_profile	/^ASCII()$/;"	f	language:Sh
 build	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def build(self):$/;"	m	language:Python	class:Deck
 card	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^card = deck.drawCard()$/;"	v	language:Python
 Card	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Card(object):$/;"	c	language:Python
+coding	/Users/Ste/.bash_profile	/^coding(){$/;"	f	language:Sh
+create	/Users/Ste/.bash_profile	/^create () {        				# Creates a file$/;"	f	language:Sh
 Deck	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Deck(object):$/;"	c	language:Python
 deck	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^deck = Deck()$/;"	v	language:Python
 draw	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def draw(self, deck):$/;"	m	language:Python	class:Player
 drawCard	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def drawCard(self):$/;"	m	language:Python	class:Deck
-os	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^import os$/;"	i	language:Python
+gadd	/Users/Ste/.bash_profile	/^gadd () {               				#creates a file in a git repo, adds it to the repo, commits to local and pushes to remote$/;"	f	language:Sh
+gbl	/Users/Ste/.bash_profile	/^gbl () {                     				 #lists the branches$/;"	f	language:Sh
+gch	/Users/Ste/.bash_profile	/^gch () {           					 #checks out the branch$/;"	f	language:Sh
+gcp	/Users/Ste/.bash_profile	/^gcp () {                                		# copies a folder to a new folder, and creates a new git\/github repo for it, and pushes everything$/;"	f	language:Sh
+GlassRooms	/Users/Ste/.bash_profile	/^GlassRooms()$/;"	f	language:Sh
+gnew	/Users/Ste/.bash_profile	/^gnew () {$/;"	f	language:Sh
+gupdate	/Users/Ste/.bash_profile	/^gupdate(){$/;"	f	language:Sh
+Hand	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Hand(object):$/;"	c	language:Python
+handinc	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def handinc(self):$/;"	m	language:Python	class:Hand
 Player	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Player(object):$/;"	c	language:Python
-player	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^player = Player("hi")$/;"	v	language:Python
+player	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^player = Player("Ste", 2000)$/;"	v	language:Python
+Position	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Position(self, pos):$/;"	m	language:Python	class:Player
 random	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^import random$/;"	i	language:Python
+Rules	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Rules(object):$/;"	c	language:Python
 show	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def show(self):$/;"	m	language:Python	class:Card
 show	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def show(self):$/;"	m	language:Python	class:Deck
 showHand	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def showHand(self):$/;"	m	language:Python	class:Player
+showPosisiotn	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def showPosisiotn(self):$/;"	m	language:Python	class:Player
 shuffle	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def shuffle(self):$/;"	m	language:Python	class:Deck
+stacklevel	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def stacklevel(self, amount):$/;"	m	language:Python	class:Player
+Table	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Table(object):$/;"	c	language:Python
+tkill	/Users/Ste/.bash_profile	/^tkill(){$/;"	f	language:Sh
+tname	/Users/Ste/.bash_profile	/^tname(){$/;"	f	language:Sh
+tnew	/Users/Ste/.bash_profile	/^tnew(){$/;"	f	language:Sh
+tsesh	/Users/Ste/.bash_profile	/^tsesh(){$/;"	f	language:Sh
+Weather	/Users/Ste/.bash_profile	/^Weather()							# Gets weather info from nyor$/;"	f	language:Sh
+__init__	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def __init__ (self):$/;"	m	language:Python	class:Table
 __init__	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def __init__(self):$/;"	m	language:Python	class:Deck
+__init__	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def __init__(self, name, stack):$/;"	m	language:Python	class:Player
 __init__	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def __init__(self, suit, val):$/;"	m	language:Python	class:Card
-__inti__	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def __inti__(self, name):$/;"	m	language:Python	class:Player	file:
+__inti__	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def __inti__(self):$/;"	m	language:Python	class:Rules	file:
+__inti__	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def __inti__(self, Plaeyers):$/;"	m	language:Python	class:Hand	file:

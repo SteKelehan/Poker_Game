@@ -1,4 +1,3 @@
-import os
 import random
 
 class Card(object):
@@ -38,11 +37,17 @@ class Deck(object):
     def drawCard(self):
         return self.cards.pop()
 
-
+# Player has a stack and cards
 class Player(object):
-    def __inti__(self, name):
+    def __init__(self, name, stack):
         self.name = name
         self.hand = []
+        self.stack = stack
+        self.position = position 
+
+    def stacklevel(self, amount):
+        self.stack = self.stack + amount 
+        return self.stack 
 
     def draw(self, deck):
         self.hand.append(deck.drawCard())
@@ -52,6 +57,56 @@ class Player(object):
     def showHand(self):
         for card in self.hand:
             card.show()
+
+    def Position(self, pos):
+        self.position = pos
+
+    def showPosisiotn(self):
+        return self.position
+        
+
+        
+
+
+# In a hand there is:
+# Players, Deal, Button and blinds, Pot, Ceck, Bet, Fold, Burn, Flop, Burn, Turn, Burn, River, Winner
+
+
+class Rules(object):
+    def __inti__(self):
+        pass
+
+#make a list of players!
+
+class Hand(object):
+    def __inti__(self, Plaeyers):
+        self.Players = Players
+        self.handId = handId
+        self.button = False
+        self.BB = False
+        self.SM = SM
+        self.pot = pot
+        self.flop = flop
+        self.burn = burn
+        self.turn = turn
+        self.river = rover
+        self.winner = winner
+        self.slip = slip
+        self.sidepot = sidepot
+
+    def handinc(self):
+        self.handId += 1
+        return self.handId
+
+    
+
+
+
+
+    
+class Table(object):
+    def __init__ (self):
+        pass
 
 
 
@@ -67,9 +122,10 @@ deck.shuffle()
 card = deck.drawCard()
 card.show()
 
-player = Player("hi")
+player = Player("Ste", 2000)
 player.draw(deck)
-palyer.showHand()
+player.showHand()
+print(player.stacklevel(100))
 
 
 
