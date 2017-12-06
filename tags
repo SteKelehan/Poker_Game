@@ -1,7 +1,10 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 ASCII	/Users/Ste/.bash_profile	/^ASCII()$/;"	f	language:Sh
+betterhand	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def betterhand(self, hand1, hand2):$/;"	m	language:Python	class:Rules
+blindpos	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def blindpos(self):$/;"	m	language:Python	class:Player
+Blinds	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^Blinds = [10,20]$/;"	v	language:Python
 build	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def build(self):$/;"	m	language:Python	class:Deck
-card	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^card = deck.drawCard()$/;"	v	language:Python
+buttonrotaion	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def buttonrotaion(self):$/;"	m	language:Python	class:Hand
 Card	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Card(object):$/;"	c	language:Python
 coding	/Users/Ste/.bash_profile	/^coding(){$/;"	f	language:Sh
 create	/Users/Ste/.bash_profile	/^create () {        				# Creates a file$/;"	f	language:Sh
@@ -17,11 +20,23 @@ GlassRooms	/Users/Ste/.bash_profile	/^GlassRooms()$/;"	f	language:Sh
 gnew	/Users/Ste/.bash_profile	/^gnew () {$/;"	f	language:Sh
 gupdate	/Users/Ste/.bash_profile	/^gupdate(){$/;"	f	language:Sh
 Hand	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Hand(object):$/;"	c	language:Python
+hand	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^hand = Hand()$/;"	v	language:Python
 handinc	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def handinc(self):$/;"	m	language:Python	class:Hand
+Handnames	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Handnames(self, rank):$/;"	m	language:Python	class:Rules
+handval	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def handval(self):$/;"	m	language:Python	class:Rules
 Player	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Player(object):$/;"	c	language:Python
-player	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^player = Player("Ste", 2000)$/;"	v	language:Python
+player1	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^player1 = Player("Ste", 2000)$/;"	v	language:Python
+player2	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^player2 = Player("Adam", 2000)$/;"	v	language:Python
+player3	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^player3 = Player("Richie", 2000)$/;"	v	language:Python
+player4	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^player4 = Player("Keith", 2000)$/;"	v	language:Python
+player5	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^player5 = Player("Luke", 2000)$/;"	v	language:Python
+player6	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^player6 = Player("Alex", 2000)$/;"	v	language:Python
+Playerposition	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Playerposition(self):$/;"	m	language:Python	class:Hand
+Players	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^Players = [player1, player2, player3, player4, player5, player6]$/;"	v	language:Python
 Position	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Position(self, pos):$/;"	m	language:Python	class:Player
+Pot	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Pot(self):$/;"	m	language:Python	class:Hand
 random	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^import random$/;"	i	language:Python
+Ranks	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Ranks(self, hand):$/;"	m	language:Python	class:Rules
 Rules	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Rules(object):$/;"	c	language:Python
 show	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def show(self):$/;"	m	language:Python	class:Card
 show	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def show(self):$/;"	m	language:Python	class:Deck
@@ -35,6 +50,7 @@ tname	/Users/Ste/.bash_profile	/^tname(){$/;"	f	language:Sh
 tnew	/Users/Ste/.bash_profile	/^tnew(){$/;"	f	language:Sh
 tsesh	/Users/Ste/.bash_profile	/^tsesh(){$/;"	f	language:Sh
 Weather	/Users/Ste/.bash_profile	/^Weather()							# Gets weather info from nyor$/;"	f	language:Sh
+winner	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def winner(self):$/;"	m	language:Python	class:Hand
 __init__	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def __init__ (self):$/;"	m	language:Python	class:Table
 __init__	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def __init__(self):$/;"	m	language:Python	class:Deck
 __init__	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def __init__(self, name, stack):$/;"	m	language:Python	class:Player

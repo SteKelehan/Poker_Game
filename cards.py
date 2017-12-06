@@ -43,7 +43,16 @@ class Player(object):
         self.name = name
         self.hand = []
         self.stack = stack
-        self.position = position 
+        self.position = 0
+        self.turn = False
+        self.call = False
+        self.fold = False
+        self.bet = False
+        self.allin = False
+        self.check = False
+        self.button = False
+        self.inpos = 3
+
 
     def stacklevel(self, amount):
         self.stack = self.stack + amount 
@@ -57,12 +66,22 @@ class Player(object):
     def showHand(self):
         for card in self.hand:
             card.show()
+            return self.hand
 
     def Position(self, pos):
         self.position = pos
 
     def showPosisiotn(self):
         return self.position
+    
+    def blindpos(self):
+        return self.inpos
+        
+
+    
+        
+
+
         
 
         
@@ -74,29 +93,109 @@ class Player(object):
 
 class Rules(object):
     def __inti__(self):
+        hand = player.showHand()
+
+    def Ranks(self, hand):
         pass
+    
+    def Handnames(self, rank):
+        if rank == 0:
+            return 'High Card'
+        elif rank == 1:
+            return 'One Pair'
+        elif rank == 2:
+            return 'Two Pair'
+        elif rank == 3:
+            return 'Three of a Kind'
+        elif rank == 4:
+            return 'Straight'
+        elif rank == 5:
+            return 'Flush'
+        elif rank == 6:
+            return 'Full House'
+        elif rank == 7:
+            return 'Four of a kind'
+        elif rank == 8:
+            return 'Straight Flush'
+        else:
+            return 'Role Flush'
+
+    def handval(self):
+        pass
+
+    def betterhand(self, hand1, hand2):
+        pass
+
+    
+
+        
+
 
 #make a list of players!
 
 class Hand(object):
     def __inti__(self, Plaeyers):
         self.Players = Players
-        self.handId = handId
-        self.button = False
-        self.BB = False
-        self.SM = SM
+        self.handId = 0
+        self.button = 0
+        self.BB = 1
+        self.SM = 2
         self.pot = pot
         self.flop = flop
         self.burn = burn
         self.turn = turn
         self.river = rover
         self.winner = winner
-        self.slip = slip
+        self.split = split
         self.sidepot = sidepot
 
+    # this should call the player rotaion, and pot renule etc.
     def handinc(self):
         self.handId += 1
         return self.handId
+
+    # This sets up the players in a seating positon and gives them the dealer, BB and SM    
+    def Playerposition(self):
+        for player in Players:
+            Players[player].position = player
+        Players[0].blindpos = 0
+        Players[0].button = True
+        Players[1].blindpos = 1
+        Players[2].blindpos = 2
+
+    # This rotates the dealer, BB and SB
+    def buttonrotaion(self):
+        index = 0
+        for player in Players:
+            if Players[player].button == True:
+                Players[player].button == False
+                Players[player].blindpos = 3
+                index = player + 1
+                break
+        for x in range(0,3):
+            if index > len(Players):
+                Players[0] = x
+            else:
+                Players[index] = x
+
+    def Pot(self):
+        print("Pot: ", self.pot)
+
+    def winner(self):
+        
+
+
+        
+                     
+        
+
+
+
+
+
+        
+
+
 
     
 
@@ -117,15 +216,35 @@ class Table(object):
 #testing
 
 
+print('-------GAME PLAY!!--------')
+
+print('Creating players')
+player1 = Player("Ste", 2000)
+player2 = Player("Adam", 2000)
+player3 = Player("Richie", 2000)
+player4 = Player("Keith", 2000)
+player5 = Player("Luke", 2000)
+player6 = Player("Alex", 2000)
+
+Players = [player1, player2, player3, player4, player5, player6]
+
+Blinds = [10,20]
+
 deck = Deck()
 deck.shuffle()
-card = deck.drawCard()
-card.show()
 
-player = Player("Ste", 2000)
-player.draw(deck)
-player.showHand()
-print(player.stacklevel(100))
+hand = Hand()
+hand.Playerposition()
+
+
+
+
+
+hand.handId()
+
+
+
+
 
 
 
