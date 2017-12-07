@@ -7,6 +7,7 @@ build	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def build(sel
 buttonrotaion	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def buttonrotaion(self):$/;"	m	language:Python	class:Hand
 Card	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Card(object):$/;"	c	language:Python
 coding	/Users/Ste/.bash_profile	/^coding(){$/;"	f	language:Sh
+consective_numbers	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def consective_numbers(self,numbers_sorted):$/;"	m	language:Python	class:Rules
 Counter	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^from collections import Counter$/;"	i	language:Python
 create	/Users/Ste/.bash_profile	/^create () {        				# Creates a file$/;"	f	language:Sh
 Deck	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Deck(object):$/;"	c	language:Python

@@ -81,6 +81,7 @@ class Player(object):
     def blindpos(self):
         return self.inpos
         
+    
 
     
         
@@ -99,6 +100,28 @@ class Rules(object):
         
     def hands(self):
         pass
+
+    
+    def consective_numbers(self,numbers_sorted):
+        cur_max = 0
+        max_ = 0
+        cur_index = 0
+        index = 0
+        for number in numbers_sorted:
+            if number == len(numbers_sorted):
+                return max_, index
+            else:
+                if number == 0:
+                    prev = number
+                else:
+                    if prev + 1 == number:
+                        cur_max += 1
+                    if cur_max > max_:
+                        max_ = cur_max
+                        index = number - cur_max
+                        cur_max = 0
+
+
     # Hands combos with only one posibility - High card (all diff), Pair, Two Pair, 4 of a kind
     # Hand combos with more - Tree of a kind(two 3 of kind)
                             # - Straight(1234567) -> pick the highest 5
@@ -116,8 +139,12 @@ class Rules(object):
         #this returns a list of tuples with 1st element -> val and second how many times it shows up
         most_common_number = [number for number in Counter(numbers).most_common(2)]
         most_common_suit = [suit for suit in Counter(suits).most_common(1)]
+        #this is a list o 
         numbers_sorted = numbers.sort()
+        # Gets no. of sequence and where they start
+        number_sequence = []
 
+        cons_numbs = consective_(numbers_sorted)
         
         suit_frequ = most_common_suit[0][1]
         suit_val = most_common_suit[0][0]
@@ -125,6 +152,24 @@ class Rules(object):
         num_val = most_common_number[0][0]
         num_frequ2 = most_common_number[1][1]
         num_val2 = most_common_number[1][0]
+        
+
+
+        # startements to work out best hand - start from best to worst, frst hand found return it!
+        #Royal Flush
+        if suit_frequ > 4 and cons_numbs[1] > 4:
+            for x in range(cons_numbs[2], cons_numbs[2] + 5):
+                pass
+
+        #Straight Flush
+        #4 ofa kind
+        #Full House
+        #Flush
+        #Straight
+        #3 of a Kind
+        #2 pair
+        #Pair
+        #High Card
 
     def Handnames(self, rank):
         if rank == 0:
@@ -210,6 +255,7 @@ class Hand(object):
         print("Pot: ", self.pot)
 
     def winner(self):
+        pass
         
 
 
@@ -221,16 +267,7 @@ class Hand(object):
 
 
 
-        
-
-
-
-    
-
-
-
-
-    
+  
 class Table(object):
     def __init__ (self):
         pass
