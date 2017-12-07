@@ -7,6 +7,7 @@ build	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def build(sel
 buttonrotaion	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def buttonrotaion(self):$/;"	m	language:Python	class:Hand
 Card	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Card(object):$/;"	c	language:Python
 coding	/Users/Ste/.bash_profile	/^coding(){$/;"	f	language:Sh
+Counter	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^from collections import Counter$/;"	i	language:Python
 create	/Users/Ste/.bash_profile	/^create () {        				# Creates a file$/;"	f	language:Sh
 Deck	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Deck(object):$/;"	c	language:Python
 deck	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^deck = Deck()$/;"	v	language:Python
@@ -23,6 +24,7 @@ Hand	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Hand(object)
 hand	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^hand = Hand()$/;"	v	language:Python
 handinc	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def handinc(self):$/;"	m	language:Python	class:Hand
 Handnames	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Handnames(self, rank):$/;"	m	language:Python	class:Rules
+hands	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def hands(self):$/;"	m	language:Python	class:Rules
 handval	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def handval(self):$/;"	m	language:Python	class:Rules
 Player	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Player(object):$/;"	c	language:Python
 player1	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^player1 = Player("Ste", 2000)$/;"	v	language:Python
@@ -36,7 +38,7 @@ Players	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^Players = [play
 Position	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Position(self, pos):$/;"	m	language:Python	class:Player
 Pot	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Pot(self):$/;"	m	language:Python	class:Hand
 random	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^import random$/;"	i	language:Python
-Ranks	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Ranks(self, hand):$/;"	m	language:Python	class:Rules
+Ranks	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def Ranks(self, hand, board):$/;"	m	language:Python	class:Rules
 Rules	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^class Rules(object):$/;"	c	language:Python
 show	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def show(self):$/;"	m	language:Python	class:Card
 show	/Users/Ste/Desktop/Programming/Git/Poker_Game/cards.py	/^    def show(self):$/;"	m	language:Python	class:Deck

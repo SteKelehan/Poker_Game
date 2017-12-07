@@ -1,4 +1,8 @@
 import random
+from collections import Counter
+# pair/ two pair/ three of a kind/ 4 of a kind 
+
+
 
 class Card(object):
     def __init__(self, suit, val):
@@ -89,15 +93,39 @@ class Player(object):
 
 # In a hand there is:
 # Players, Deal, Button and blinds, Pot, Ceck, Bet, Fold, Burn, Flop, Burn, Turn, Burn, River, Winner
-
-
 class Rules(object):
     def __inti__(self):
-        hand = player.showHand()
-
-    def Ranks(self, hand):
         pass
-    
+        
+    def hands(self):
+        pass
+    # Hands combos with only one posibility - High card (all diff), Pair, Two Pair, 4 of a kind
+    # Hand combos with more - Tree of a kind(two 3 of kind)
+                            # - Straight(1234567) -> pick the highest 5
+                            # - Flush -> pick the highest values 
+                            # - Full house -> 2 3 of a kind -> higher 3 of a kind is the 3 other is 2
+                            # - Straight Flush -> pick the highest 
+    def Ranks(self, hand, board):
+        total = hand + board
+        numbers = []
+        suits = []
+        numbers_sorted = []
+        for t in total:
+            numbers.append(total.val)
+            suits.append(total.suit)
+        #this returns a list of tuples with 1st element -> val and second how many times it shows up
+        most_common_number = [number for number in Counter(numbers).most_common(2)]
+        most_common_suit = [suit for suit in Counter(suits).most_common(1)]
+        numbers_sorted = numbers.sort()
+
+        
+        suit_frequ = most_common_suit[0][1]
+        suit_val = most_common_suit[0][0]
+        num_frequ = most_common_number[0][1]
+        num_val = most_common_number[0][0]
+        num_frequ2 = most_common_number[1][1]
+        num_val2 = most_common_number[1][0]
+
     def Handnames(self, rank):
         if rank == 0:
             return 'High Card'
